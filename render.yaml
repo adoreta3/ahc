@@ -1,0 +1,6 @@
+services:
+  - type: web
+    name: advancehomecareapp
+    env: python
+    buildCommand: "./build.sh"
+    startCommand: "gunicorn advancehomecare.wsgi:application"
